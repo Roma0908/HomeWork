@@ -4,7 +4,7 @@ import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
-  const basePath = process.env.VITE_BASE_PATH || (process.env.GITHUB_ACTIONS ? '/caseverse/' : '/');
+  const basePath = process.env.VITE_BASE_PATH || (process.env.GITHUB_ACTIONS ? '/HomeWork/' : '/');
   return {
     base: basePath,
     plugins: [react(), tailwindcss()],
