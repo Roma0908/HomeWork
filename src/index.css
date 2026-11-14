@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: "Cinzel", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-case-bg: #0B1020;
+  --color-case-surface: #111827;
+  --color-case-card: #182235;
+  --color-case-elevated: #202C40;
+  --color-case-border: #2A3B54;
+  --color-case-gold: #D6AE67;
+  --color-case-gold-light: #E4C589;
+  --color-case-blue: #6C94C5;
+  --color-case-text: #F3F4F6;
+  --color-case-muted: #A8B1C1;
+}
+
+@layer base {
+  body {
+    background-color: #0B1020;
+    color: #F3F4F6;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom scrollbars for case files */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1020;
+}
+::-webkit-scrollbar-thumb {
+  background: #202C40;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D6AE67;
+}
