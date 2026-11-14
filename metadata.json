@@ -1,0 +1,6 @@
+{
+  "name": "CASEVERSE",
+  "description": "Procedural 2D detective mystery game with educational AI algorithms, interactive crime scene investigations, and multilingual support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
