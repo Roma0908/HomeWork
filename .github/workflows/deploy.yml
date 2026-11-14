@@ -31,12 +31,7 @@ jobs:
           cache: npm
 
       - name: Install Dependencies
-        run: |
-          if [ -f package-lock.json ]; then
-            npm ci
-          else
-            npm install
-          fi
+        run: npm install --legacy-peer-deps
 
       - name: Run Test Suite
         run: npm test
